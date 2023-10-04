@@ -35,6 +35,7 @@ class CommentsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    // store comments
     public function store(Request $request)
     {
         if (Auth::check()) {
@@ -89,6 +90,7 @@ class CommentsController extends Controller
      * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
      */
+    // delete comment for auth user
     public function destroy(Comment $comment)
     {
         if (Auth::check()) {
